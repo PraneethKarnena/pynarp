@@ -2,6 +2,7 @@ altgraph==0.17
 astroid==2.5.6
 colorama==0.4.4
 commonmark==0.9.1
+cx-Freeze==6.7
 flake8==3.9.2
 importlib-metadata==4.5.0
 isort==5.8.0
@@ -10,8 +11,6 @@ mccabe==0.6.1
 pycodestyle==2.7.0
 pyflakes==2.3.1
 Pygments==2.9.0
-pyinstaller==4.3
-pyinstaller-hooks-contrib==2021.1
 rich==10.4.0
 toml==0.10.2
 typed-ast==1.4.3
