@@ -1,5 +1,8 @@
+import click
 from rich.console import Console
 from rich.markdown import Markdown
+
+from src.run import start
 
 
 def print_intro():
@@ -9,7 +12,13 @@ def print_intro():
 
     console = Console()
     console.print(markdown)
+    console.print('Type [bold cyan]./pynarp --help[/bold cyan] for mode details.')
+    console.print('\n')
 
 
 if __name__ == '__main__':
+    # Print project info
     print_intro()
+
+    # Start the installer
+    start()
