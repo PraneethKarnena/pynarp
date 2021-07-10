@@ -1,3 +1,3 @@
 # Pynarp
 
-A simple installer to configure Python, PostgreSQL, Nginx and Nginx Unit on Ubuntu/Debian.
+Pynarp is a simple terminal application to configure Python, PostgreSQL, Nginx and Nginx Unit on Debian-based systems.
