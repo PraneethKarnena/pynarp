@@ -14,6 +14,9 @@ def start(action, candidate):
     systems.
     """
 
+    # Terminal output formatting
+    print('\n')
+
     # Update system
     if action in ('install', 'update'):
         updates.SystemUpdate()
