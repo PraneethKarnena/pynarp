@@ -3,6 +3,10 @@ from rich.console import Console
 
 
 class SystemUpdate:
+    """
+    Update and upgrade the system and packages
+    """
+    
     command = None
 
     def __init__(self):
