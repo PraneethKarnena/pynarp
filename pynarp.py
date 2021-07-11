@@ -15,7 +15,7 @@ def print_intro():
 
     console = Console()
     console.print(markdown)
-    console.print('Type [bold cyan]./pynarp --help[/bold cyan] for mode details.')
+    console.print('Run [bold cyan]sudo ./pynarp --help[/bold cyan] for mode details.')
     console.print('\n')
 
 
