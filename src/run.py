@@ -4,7 +4,7 @@ from .modules import updates
 
 
 @click.command()
-@click.option('-a', '--action', type=click.Choice(['install', 'update', 'remove', 'configure']), default='install',
+@click.option('-a', '--action', type=click.Choice(['install', 'remove', 'configure']), default='install',
 required=True, show_default=True, prompt='Action')
 @click.option('-c', '--candidate', type=click.Choice(['all', 'python', 'postgresql', 'nginx', 'unit']), default='all',
 required=True, show_default=True, prompt='Candidate')
@@ -18,7 +18,7 @@ def start(action, candidate):
     print('\n')
 
     # Update system
-    if action in ('install', 'update'):
+    if action in ('install'):
         updates.SystemUpdate()
 
     return
