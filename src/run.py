@@ -17,8 +17,8 @@ def start(action, candidate):
     # Terminal output formatting
     print('\n')
 
-    if action in ('install'):
-         
+    if action in ('install',):
+
         # Update system
         updates.SystemUpdate()
 
