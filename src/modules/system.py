@@ -2,7 +2,7 @@ import subprocess
 from rich.console import Console
 
 
-class SystemUpdate:
+class System:
     """
     Update and upgrade the system and packages
     """
