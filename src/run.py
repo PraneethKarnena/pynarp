@@ -22,4 +22,7 @@ def start(action, candidate):
         # Update system
         updates.SystemUpdate()
 
+        if candidate == 'nginx':
+            pass
+
     return
