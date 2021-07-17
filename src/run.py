@@ -1,6 +1,7 @@
 import click
 
-from .modules import updates
+from .modules.system import System
+from .modules.nginx import Nginx
 
 
 @click.command()
@@ -20,9 +21,9 @@ def start(action: str, candidate: str) -> None:
     if action in ('install',):
 
         # Update system
-        updates.SystemUpdate()
+        System().update()
 
         if candidate == 'nginx':
-            pass
+            Nginx(action)
 
     return
