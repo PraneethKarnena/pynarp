@@ -5,7 +5,7 @@ from rich.console import Console
 from rich.markdown import Markdown
 
 from src.run import start
-from src.modules.permissions import has_permissions
+from src.modules.permissions import has_root_permission
 
 
 def print_intro():
@@ -21,7 +21,7 @@ def print_intro():
 
 if __name__ == '__main__':
     # Check sudo access
-    if not has_permissions():
+    if not has_root_permission():
         sys.exit("Pynarp can only be run with root permissions!")
 
     # Print project info

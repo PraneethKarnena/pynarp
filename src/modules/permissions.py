@@ -1,9 +1,9 @@
 import os
 
 
-def has_permissions():
+def has_root_permission():
     """
-    Check sudo permissions
+    Check root permissions
     """
 
     return os.geteuid() == 0
