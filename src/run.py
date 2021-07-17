@@ -8,7 +8,7 @@ from .modules import updates
                 required=True, show_default=True, prompt='Action')
 @click.option('-c', '--candidate', type=click.Choice(['all', 'python', 'postgresql', 'nginx', 'unit']), 
                 default='all', required=True, show_default=True, prompt='Candidate')
-def start(action, candidate):
+def start(action: str, candidate: str) -> None:
     """
     Pynarp is a simple terminal application to configure Python, PostgreSQL, Nginx and Nginx Unit on Debian-based
     systems.
